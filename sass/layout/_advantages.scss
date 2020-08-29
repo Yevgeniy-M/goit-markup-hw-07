@@ -11,6 +11,16 @@
 
 .advantages-list-block {
   width: 270px;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+  }
 }
 
 .advantages-title {
@@ -32,16 +42,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-light-theme-color;
-}
-
-.advantages-list-block::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  border-radius: 4px;
 }
 
 .icon-antenna::before {

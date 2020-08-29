@@ -5,22 +5,18 @@
 
 .footer {
   display: flex;
-
-  /*align-items: center;*/
 }
 
 .fotter-logo {
+  display: inline-block;
   margin-top: 60px;
   margin-right: 69px;
-}
+  width: 200px;
 
-.footer-logo .navigation-logo {
-  margin-bottom: 200px;
+  .navigation-logo {
+    margin-bottom: 20px;
+  }
 }
-
-/*.header-address-mail {
-  margin-bottom: 0px;
-}*/
 
 .address-logo-part2 {
   font-family: $secondary-font;
@@ -46,10 +42,11 @@
 .footer-subscription {
   display: block;
   margin-top: 72px;
-}
-.footer-subscription .form-field {
-  margin-bottom: 20px;
-  margin-top: 28px;
+
+  .form-field {
+    margin-bottom: 20px;
+    margin-top: 28px;
+  }
 }
 
 .subscription-title {
@@ -61,25 +58,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-dark-theme-color;
-}
-
-.subscription .social-network-list-item {
-  margin-top: 20px;
-  margin-bottom: 0px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.subscription .social-network-list-item:hover,
-.subscription .social-network-list-item:focus {
-  background-color: $accent-color;
-}
-
-.subscription .footer-subscription-list:not(:last-child) {
-  margin-right: 20px;
-}
-
-.subscription .social-network-list-item-svg {
-  fill: #fff;
 }
 
 .footer-address-mail,
@@ -99,6 +77,25 @@
 .subscription {
   margin-top: 72px;
   margin-right: 94px;
+
+  .social-network-list-item {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .social-network-list-item:hover,
+  .social-network-list-item:focus {
+    background-color: $accent-color;
+  }
+
+  .footer-subscription-list:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .social-network-list-item-svg {
+    fill: #fff;
+  }
 }
 
 .subscription-form {
@@ -112,17 +109,14 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
-}
-
-.subscription-form-mail {
   font-size: 16px;
   line-height: 20px;
   padding-left: 20px;
   margin-right: 12px;
-}
 
-.subscription-form-mail:not(:placeholder-shown) {
-  color: $title-dark-theme-color;
+  &:not(:placeholder-shown) {
+    color: $title-dark-theme-color;
+  }
 }
 
 .footer-button {

@@ -3,8 +3,8 @@
 .our-team-section {
   background-color: #f5f4fa;
 }
-.name-title,
-.position-title {
+
+.name-title {
   font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
@@ -14,6 +14,18 @@
   color: $title-light-theme-color;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.position-title {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-light-theme-color;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .our-team-list {
@@ -41,6 +53,16 @@
   align-items: center;
   margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .social-network-list-item-svg,
+  &:focus .social-network-list-item-svg {
+    fill: #fff;
+  }
 }
 
 .social-network-list-item-svg {
@@ -49,33 +71,6 @@
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
 
-.social-network-list-item-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-network-list-item:hover,
-.social-network-list-item:focus {
-  background-color: $accent-color;
-}
-
-.social-network-list-item:hover .social-network-list-item-svg,
-.social-network-list-item:focus .social-network-list-item-svg {
-  fill: #fff;
-}
-
-/*.social-network-list .link {
-  display: inline-block;
-  height: 44px;
-  width: 44px;
-  background-image: url(../img/social-network-icons/instagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.social-network-list .link:hover,
-.social-network-list .link:focus {
-  background-color: #2f303a;*/
