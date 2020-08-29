@@ -106,7 +106,7 @@
       <!-- Cекция-чем мы занимаемся -->
       <section class="section">
         <div class="container">
-          <h2 class="what-are-we-doing title">Чем мы занимаемся</h2>
+          <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="what-are-we-doing-list-item">
               <img
@@ -499,7 +499,7 @@
           <div class="footer-subscription">
             <strong class="subscription-title">Подпишитесь на рассылку</strong>
             <form action="#" class="subscription-form">
-              <label for="">
+              <label>
                 <input
                   class="subscription-form-mail"
                   type="email"
@@ -524,7 +524,7 @@
 
     <!-- Модальное окно-->
 
-    <div class="backdrop .is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="backdrop-title"> Оставьте свои данные, мы вам перезвоним </b>
         <form action="#">
@@ -545,7 +545,12 @@
           </label>
 
           <label class="form-field">
-            <input type="mail" class="form-input" name="mail" placeholder=" " />
+            <input
+              type="email"
+              class="form-input"
+              name="mail"
+              placeholder=" "
+            />
             <span class="form-label">Почта</span>
             <svg class="form-svg">
               <use href="./img/icons/modal-sprite.svg#icon-letter"></use>
